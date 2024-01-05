@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mistvideo" id="tv_EsznhcH6gQzf">
+          <a href="http://49.0.6.106:8080/tv.html" target="_blank">
+            Click here to play this video
+          </a>
+        <script>
+          var a = function(){
+            mistPlay("tv",{
+              target: document.getElementById("tv_EsznhcH6gQzf")
+            });
+          };
+          if (!window.mistplayers) {
+            var p = document.createElement("script");
+            p.src = "http://49.0.6.106:8080/player.js"
+            document.head.appendChild(p);
+            p.onload = a;
+          }
+          else { a(); }
+        </script>
+      </div>
+</body>
+</html>
